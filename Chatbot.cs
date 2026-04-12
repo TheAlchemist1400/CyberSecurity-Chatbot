@@ -27,7 +27,7 @@ namespace Chatbot_Part1
             Console.WriteLine("A Cybersecurity Awareness Chatbot for South African Citizens");
             Console.WriteLine();
 
-            runChat();
+            runChat(name);
         }
 
         // Chat method to run the chatbot and prompt the user for their questions
@@ -55,7 +55,7 @@ namespace Chatbot_Part1
                 if (string.IsNullOrEmpty(question))
                 {
                     Console.WriteLine("Question cannot be empty, please ask a valid question.");
-                    contine;
+                    continue;
                 }
 
                 // Set the console color to green for the chatbot's response 
