@@ -21,7 +21,7 @@ namespace Chatbot_Part1
             catch (Exception ex)
             {
                 // Handle any exceptions that may occur while trying to play the audio and return an error message to the user
-                Console.WriteLine("An error occured: " + ex.Message);
+                Console.WriteLine($"An error occured: {ex.Message}");
             }
         }
     }

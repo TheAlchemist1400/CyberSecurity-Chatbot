@@ -89,6 +89,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chatbot.cs" />
     <Compile Include="Greeting.cs" />
     <Compile Include="Logo.cs" />
     <Compile Include="Program.cs" />
