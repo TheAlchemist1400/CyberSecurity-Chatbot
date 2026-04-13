@@ -30,7 +30,7 @@ typing exits the chatbot
 
 - How to run the Project
 1. Clone the repository:
-git clone https://github.com/your-username/your-repo-name.git
+git clone (https://github.com/TheAlchemist1400/CyberSecurity-Chatbot)
 2. Open the project in Visual Studio
 3. Ensure:
 greeting.wav is included in the project
