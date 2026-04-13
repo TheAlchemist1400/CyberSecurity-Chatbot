@@ -30,7 +30,10 @@ ________      ___    ___ ________  _______   ________
    \ \__\ \__\ \__\ \__\ \____________\ \__\\ \__\____\_\  \ 
     \|__|\|__|\|__|\|__|\|____________|\|__| \|__|\_________\
                                                  \|_________|
-            CYBER HAWKS, a cyber security chatbot.");
+            ");
+
+            Console.WriteLine();
+            Console.WriteLine("CYBER HAWKS, a cyber security chatbot.");
 
             // Restore the original console colors
             Console.ResetColor();

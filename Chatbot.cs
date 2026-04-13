@@ -9,10 +9,10 @@ namespace Chatbot_Part1
     internal class Chatbot
     {
         // Start method to start the chatbot and prompt the user for their name
-        public void start()
+        public void run()
         {
             // Prompt the user to enter their name and store it in a variable
-            Console.WriteLine("Enter your name: ");
+            Console.Write("Enter your name: ");
             String name = Console.ReadLine();
 
             // Ensure the user has entered a name, if not prompt them again until they do

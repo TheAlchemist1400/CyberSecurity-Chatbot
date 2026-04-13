@@ -14,8 +14,10 @@ namespace Chatbot_Part1
             // Use the SoundPlayer class to "TRY" and play the audio file, Use try incase an error occurs it doesnt crash the program
             try
             {
+                // https://quillbot.com/tools/text-to-speech?utm_medium=cpc&utm_source=bing&utm_campaign=&utm_term=text%20to%20speech%20voices%20free&utm_content=&campaign_type=search-606348085&click_id=&campaign_id=606348085&adgroup_id=1338108226846935&ad_id=&keyword=text%20to%20speech%20voices%20free&placement=&target=&network=o&msclkid=0b82a21303dc195f98a7cbcf28a24acd
+                // Website used to convert text to speech, downloaded the mp3 and then coverted to wav. 
                 // TODO : Change the audio to the correct one
-                SoundPlayer greeting = new SoundPlayer(@"C:\Users\Armando Moabi\Documents\Rosebank\3rd semester 2026\PROG6221\Class acts\Chatbot Part1\05 - Party On Venus (Prod by by OmArr Josiah of Stoopid Robots");
+                SoundPlayer greeting = new SoundPlayer("speech.wav");
                 greeting.PlaySync();
             }
             catch (Exception ex)
