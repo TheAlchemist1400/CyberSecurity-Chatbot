@@ -16,27 +16,30 @@ namespace Chatbot_Part2
         // ============================================================== RESPONSE METHODS ==========================================
         public static string GetResponse(string question, string name)
         {
+            // Set the user response to lower case to make it easier to compare
+            question = question.ToLower();
+
             // If statement to save the topic password as the users favourite topic
-            if (question.Contains("interest in passwaord") || question.Contains("like password") || question.Contains("favourite topic is password"))
+            if (question.Contains("interest in password") || question.Contains("like password") || question.Contains("favourite topic is password") || (question.Contains("favourite") && question.Contains("password")))
             {
                 favoriteTopic = "password";
                 return $"{name}, I'll remember that you're interested in password security, remember to use unique passwords for every account.";
             }
             // If statement to save the topic phishing as the users favourite topic
-            if (question.Contains("interest in phishing") || question.Contains("like phishing") || question.Contains("favourite topic is phishing"))
+            if (question.Contains("interest in phishing") || question.Contains("like phishing") || question.Contains("favourite topic is phishing") || (question.Contains("favourite") && question.Contains("phishing")))
             {
                 favoriteTopic = "phishing";
                 return $"{name}, I'll remember that you're interested in phishing awareness, always be cautious of suspicious emails and links.";
             }
             // If statement to save the topic malware as the users favourite topic
-            if (question.Contains("interested in malware") || question.Contains("like malware") || question.Contains("favourite topic is malware"))
+            if (question.Contains("interested in malware") || question.Contains("like malware") || question.Contains("favourite topic is malware") || (question.Contains("favourite") && question.Contains("malware")))
             {
                 favoriteTopic = "malware";
 
                 return $"{name}, I'll remember that you're interested in malware protection, always keep your antivirus software up to date.";
             }
             // If statement to save the topic browsing as the users favourite topic
-            if (question.Contains("interested in browsing") || question.Contains("like browsing") || question.Contains("favourite topic is browsing"))
+            if (question.Contains("interested in browsing") || question.Contains("like browsing") || question.Contains("favourite topic is browsing") || (question.Contains("favourite") && question.Contains("browsing")))
             {
                 favoriteTopic = "browsing";
 
@@ -63,26 +66,27 @@ namespace Chatbot_Part2
                 // Cybersecurity topics
                 case string s when s.Contains("password"):
                     topic = "password";
-                    Console.WriteLine($"Password safety is crucial in protecting your online accounts, as it is password is a string of letters, numbers, and symbols that acts like a key to access a computer system, online account, or other secured resources. It verifies the identity of the user and ensures that only authorized individuals can access sensitive data or perform actions within a system");
-                    
+                    Console.WriteLine($"Password safety is crucial in protecting your online accounts,\nwould you like me to go further more or give you a tip on {topic}?");
+
+
                     return CurrentTopic(topic, name);
 
                 case string s when s.Contains("phishing") || s.Contains("emails"):
                     topic = "phishing";
                     Console.WriteLine($"Phishing scams are fraudulent attempts to obtain sensitive information by pretending to be a trustworthy entity.");
-                    
+
                     return CurrentTopic(topic, name);
-                   
+
                 case string s when s.Contains("malware"):
                     topic = "malware";
                     Console.WriteLine($"Malware is malicious software designed to harm or exploit computer systems.");
-                    
+
                     return CurrentTopic(topic, name);
 
                 case string s when s.Contains("browsing") || s.Contains("internet") || s.Contains("website"):
                     topic = "browsing";
                     Console.WriteLine($"Safe browsing is essential to protect your personal information and avoid online threats.");
-                    
+
                     return CurrentTopic(topic, name);
 
                 // General questions
@@ -103,7 +107,7 @@ namespace Chatbot_Part2
         // ============================================================== CURRENT METHODS ==========================================
         public static string CurrentTopic(string topic, string name)
         {
-            Console.WriteLine($"Would you like me to give you tips on protecting against {topic}? Type yes or tips.");
+            Console.WriteLine($"Would you like me to give you tips on protecting against {topic} or explain further? Type yes for tips and go further for better explanation.");
 
             switch (topic.ToLower())
             {
@@ -115,6 +119,10 @@ namespace Chatbot_Part2
                     {
                         return getPasswordTips();
                     }
+                    else if (ans == "go further" || ans == "further" || ans == "more")
+                    {
+                        return passwordFurther(); 
+                    }
                     break;
 
                 // If the topic is phishing, ask if they want phishing tips
@@ -125,7 +133,12 @@ namespace Chatbot_Part2
                     {
                         return getPhishingTips();
                     }
+                    else if (ans2 == "go further" || ans2 == "further" || ans2 == "more")
+                    {
+                        return phishingFurther();
+                    }
                     break;
+
                 // If the topic is malware, ask if they want malware tips
                 case "malware":
                     string ans3 = Console.ReadLine().ToLower();
@@ -134,7 +147,12 @@ namespace Chatbot_Part2
                     {
                         return getMalwareTips();
                     }
+                    else if (ans3 == "go further" || ans3 == "further" || ans3  == "more")
+                    {
+                        return malwareFurther();
+                    }
                     break;
+
                 // If the topic is browsing, ask if they want browsing tips
                 case "browsing":
                     string ans4 = Console.ReadLine().ToLower();
@@ -143,12 +161,16 @@ namespace Chatbot_Part2
                     {
                         return getBrowsingTips();
                     }
+                    else if (ans4 == "go further" || ans4 == "further" || ans4 == "more")
+                    {
+                        return browsingFurther();
+                    }
                     break;
 
                 default:
                     return ($"You are not currently learning about any specific topic, {name}. Type \"help\" for a list of commands.");
                     break;
-            }    
+            }
 
             // If user answered something other than "yes"/"tips" we return a friendly message.
             return $"Okay, {name}. If you want tips about {topic}, type the topic name again or type \"help\".";
@@ -170,6 +192,7 @@ namespace Chatbot_Part2
 
             string answer;
 
+            // a do while loop to display the tips one by one and ask the user if they want to see the next tip or go back to the main menu.
             do
             {
                 int index = random.Next(phishingTips.Length);
@@ -180,6 +203,7 @@ namespace Chatbot_Part2
             }
             while (answer == "yes");
 
+            // returning empty string to satisfy the method's return type, since the tips are displayed directly in the console.
             return string.Empty;
         }
         // ============================== PASSWORD TIPS METHODS ==============================
@@ -196,6 +220,7 @@ namespace Chatbot_Part2
 
             string answer;
 
+            // a do while loop to display the tips one by one and ask the user if they want to see the next tip or go back to the main menu.
             do
             {
                 int index = random.Next(passwordTips.Length);
@@ -204,8 +229,10 @@ namespace Chatbot_Part2
                 Console.WriteLine("\nWould you like another tip? (yes/no)");
                 answer = Console.ReadLine().ToLower();
             }
+            // Continue as long as the user says "yes" to seeing another tip.
             while (answer == "yes");
 
+            // returning empty string to satisfy the method's return type, since the tips are displayed directly in the console.
             return string.Empty;
         }
         // ============================== MALWARE TIPS METHODS ==============================
@@ -222,6 +249,7 @@ namespace Chatbot_Part2
 
             string answer;
 
+            // a do while loop to display the tips one by one and ask the user if they want to see the next tip or go back to the main menu.
             do
             {
                 int index = random.Next(malwareTips.Length);
@@ -230,8 +258,10 @@ namespace Chatbot_Part2
                 Console.WriteLine("\nWould you like another tip? (yes/no)");
                 answer = Console.ReadLine().ToLower();
             }
+            // Continue as long as the user says "yes" to seeing another tip.
             while (answer == "yes");
 
+            // returning empty string to satisfy the method's return type, since the tips are displayed directly in the console.
             return string.Empty;
         }
         // ============================== BROWSING TIPS METHODS ==============================
@@ -247,6 +277,7 @@ namespace Chatbot_Part2
 
             string answer;
 
+            // a do while loop to display the tips one by one and ask the user if they want to see the next tip or go back to the main menu.
             do
             {
                 int index = random.Next(browsingTips.Length);
@@ -255,9 +286,36 @@ namespace Chatbot_Part2
                 Console.WriteLine("\nWould you like another tip? (yes/no)");
                 answer = Console.ReadLine().ToLower();
             }
+            // Continue as long as the user says "yes" to seeing another tip.
             while (answer == "yes");
 
+            // returning empty string to satisfy the method's return type, since the tips are displayed directly in the console.
             return string.Empty;
+        }
+
+        // ============================================================== FURTHER METHODS ==========================================
+        public static string passwordFurther()
+        {
+            // Explain why strong passwords are important and how they protect against cyber threats
+            return ("A password is a string of letters, numbers, and symbols that acts like a key to access a computer system, online account, or other secured resources. It verifies the identity of the user and ensures that only authorized individuals can access sensitive data or perform actions within a system.");
+        }
+
+        public static String phishingFurther()
+        {
+            // Explain what phishing is and how it can lead to identity theft, financial loss, and other cybercrimes
+            return ("Phishing is a type of cyber attack where attackers impersonate legitimate organizations or individuals to trick victims into revealing sensitive information such as passwords, credit card numbers, or social security numbers. This can lead to identity theft, financial loss, and other cybercrimes.");
+        }
+
+        public static String malwareFurther()
+        {
+            // Explain what malware is and how it can damage devices, steal data, and disrupt operations
+            return ("Malware is a type of software designed to harm or exploit any programmable device, service, or network. It can damage devices, steal data, and disrupt operations by gaining unauthorized access to systems, encrypting files for ransom, or using resources for malicious purposes.");
+        }
+
+        public static String browsingFurther()
+        {
+            // Explain what safe browsing practices are and how they can prevent cyber threats
+            return ("Safe browsing practices include using a secure and reputable web browser, enabling pop-up blockers, being cautious when entering personal information on websites, and avoiding untrusted or suspicious websites. These practices help prevent cyber threats and protect your online privacy.");
         }
     }
 }
