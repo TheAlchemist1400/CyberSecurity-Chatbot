@@ -10,6 +10,7 @@ namespace Chatbot_Part1
     {
         public static void DisplayLogo()
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             // Ascii art from https://www.asciiart.eu/text-to-ascii-art
             Console.WriteLine(@"
 ________      ___    ___ ________  _______   ________       
@@ -34,6 +35,7 @@ ________      ___    ___ ________  _______   ________
 
             Console.WriteLine();
             Console.WriteLine("CYBER HAWKS, a cyber security chatbot.");
+            Console.WriteLine();
 
             // Restore the original console colors
             Console.ResetColor();

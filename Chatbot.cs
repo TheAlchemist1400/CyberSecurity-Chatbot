@@ -11,6 +11,7 @@ namespace Chatbot_Part1
         // Start method to start the chatbot and prompt the user for their name
         public void run()
         {
+            Console.WriteLine();
             // Prompt the user to enter their name and store it in a variable
             Console.Write("Enter your name: ");
             String name = Console.ReadLine();
@@ -22,10 +23,13 @@ namespace Chatbot_Part1
                 Console.WriteLine("Enter a valid name: ");
                 name = Console.ReadLine();
             }
-
+            Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------------------------------------------");
             Console.WriteLine($"Welcome to CYBER HAWKS, {name}");
             Console.WriteLine("A Cybersecurity Awareness Chatbot for South African Citizens");
             Console.WriteLine();
+            Console.WriteLine("Always check up on me on how I am, what if im having marriage problems.\nMight be a chatbot but simple \"How are you\" goes a long way");
+            Console.WriteLine("-------------------------------------------------------------------------------------------");
 
             runChat(name);
         }
@@ -35,7 +39,7 @@ namespace Chatbot_Part1
         {
             while (true)
             {
-                Console.WriteLine("Ask me a question about cybersecurity or type 'exit' to quit. ");
+                Console.WriteLine("Ask me a question about cybersecurity or your cyber interest or help if not sure what to ask, or type 'exit' to quit.");
 
                 // Set the console color to yellow
                 Console.ForegroundColor = ConsoleColor.Yellow;
