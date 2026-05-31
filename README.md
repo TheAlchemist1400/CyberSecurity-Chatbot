@@ -79,6 +79,8 @@ Copy to Output Directory → Copy if newer
 4. Run the application:
 Press F5 or click "Start"
 
+If program is giving issues please clone the repository when i commited the "fixed the syntax error" for a more stable command line program 
+ 
 - Learning Outcomes
 This project demonstrates:
 1. User input handling in C#
