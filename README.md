@@ -28,6 +28,45 @@ Provides fallback responses when input is not understood.
 typing help displays avaliable commands
 typing exits the chatbot
 
+## ChatBot Part2
+Enhancements
+
+The following features were added and improved in Part 2:
+
+• Enhanced conversation flow with continuous user interaction.
+• Topic-specific cybersecurity guidance for:
+
+* Password Safety
+* Phishing Attacks
+* Malware Protection
+* Safe Browsing Practices
+* Personalized responses using the user’s name.
+* Random cybersecurity tips generated for each topic.
+* Improved input validation to handle invalid, empty, or unknown commands.
+* Help command that displays all available chatbot commands.
+* Exit command that allows users to safely close the chatbot.
+* Better code organization through the use of methods and classes.
+* Topic tracking functionality that allows the chatbot to respond based on the cybersecurity topic currently being discussed.
+* Improved user experience through clearer prompts and feedback messages.
+
+Available Commands
+
+• help – Displays available commands.
+• password – Learn about password safety.
+• phishing – Learn about phishing attacks.
+• malware – Learn about malware threats.
+• browsing – Learn about safe browsing practices.
+• who are you – Learn about Cyber Hawks.
+• who am i - Returns your name and favourite topic
+• exit – Close the chatbot.
+
+Technologies Used
+
+• C#
+• .NET Console Application
+• SoundPlayer Class
+• Object-Oriented Programming Principles
+
 - How to run the Project
 1. Clone the repository:
 git clone (https://github.com/TheAlchemist1400/CyberSecurity-Chatbot)
