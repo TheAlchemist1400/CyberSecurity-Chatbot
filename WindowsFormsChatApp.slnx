@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Data/">
+    <File Path="responses.json" />
+    <File Path="tips.json" />
+  </Folder>
+  <Project Path="WindowsFormsChatApp.csproj" Id="97f6cb43-c2f6-45b4-b07e-43825def0ace" />
+</Solution>

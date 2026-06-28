@@ -1,28 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NAudio.Wave;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace Chatbot_Part1
+namespace WindowsFormsChatApp
 {
-    internal class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            Console.Title = "CYBER HAWKS - A Cybersecurity Awareness Chatbot for South African Citizens";
-
-            Logo.DisplayLogo();
-
-            AudioPlayer.PlayGreeting();
-
-            Chatbot bot = new Chatbot();
-            bot.run();
-
-            Console.Read();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
     }
 }
-
-//welcome to Cyber hawks , SA's very own Cybersecurity chatbot.

@@ -1,0 +1,27 @@
+﻿[
+  {
+    "Question": "Using the same password everywhere is secure practice.",
+    "Answer": false,
+    "Topic": "password"
+  },
+  {
+    "Question": "A strong password should include symbols.",
+    "Answer": true,
+    "Topic": "password"
+  },
+  {
+    "Question": "Phishing emails are always easy to identify.",
+    "Answer": false,
+    "Topic": "phishing"
+  },
+  {
+    "Question": "Antivirus software helps protect your device from threats.",
+    "Answer": true,
+    "Topic": "malware"
+  },
+  {
+    "Question": "HTTPS websites are generally safer than HTTP websites.",
+    "Answer": true,
+    "Topic": "browsing"
+  }
+]

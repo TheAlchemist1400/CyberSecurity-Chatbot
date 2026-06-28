@@ -1,0 +1,77 @@
+[
+  {
+    "Topic": "password",
+    "Tip": "Use a combination of uppercase and lowercase letters, numbers, and special characters."
+  },
+  {
+    "Topic": "password",
+    "Tip": "Avoid using easily guessable information such as your name or birthdate."
+  },
+  {
+    "Topic": "password",
+    "Tip": "Use a passphrase or a combination of random words to create a longer password."
+  },
+  {
+    "Topic": "password",
+    "Tip": "Consider using a password manager to securely store and generate passwords."
+  },
+  {
+    "Topic": "password",
+    "Tip": "Use a unique password for every account to prevent credential reuse attacks."
+  },
+
+  {
+    "Topic": "malware",
+    "Tip": "Keep your operating system and software updated with the latest security patches."
+  },
+  {
+    "Topic": "malware",
+    "Tip": "Use reputable antivirus and anti-malware software and keep it updated."
+  },
+  {
+    "Topic": "malware",
+    "Tip": "Avoid downloading files from unknown or untrusted sources."
+  },
+  {
+    "Topic": "malware",
+    "Tip": "Regularly back up your important data to external or cloud storage."
+  },
+  {
+    "Topic": "malware",
+    "Tip": "Do not click on suspicious links or pop-ups."
+  },
+
+  {
+    "Topic": "browsing",
+    "Tip": "Use a secure and reputable web browser."
+  },
+  {
+    "Topic": "browsing",
+    "Tip": "Enable pop-up blockers to avoid malicious ads."
+  },
+  {
+    "Topic": "browsing",
+    "Tip": "Always check for HTTPS before entering personal data."
+  },
+  {
+    "Topic": "browsing",
+    "Tip": "Avoid visiting suspicious or unknown websites."
+  },
+  {
+    "Topic": "browsing",
+    "Tip": "Do not download files from untrusted websites."
+  },
+
+  {
+    "Topic": "purpose",
+    "Tip": "The purpose of this chatbot is to raise cybersecurity awareness."
+  },
+  {
+    "Topic": "goal",
+    "Tip": "Our goal is to educate users and protect them from cyber threats."
+  },
+  {
+    "Topic": "cyber hawks",
+    "Tip": "Cyber Hawks is a cybersecurity awareness team."
+  }
+]
