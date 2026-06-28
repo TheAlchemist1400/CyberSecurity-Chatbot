@@ -49,6 +49,32 @@ The following features were added and improved in Part 2:
 * Topic tracking functionality that allows the chatbot to respond based on the cybersecurity topic currently being discussed.
 * Improved user experience through clearer prompts and feedback messages.
 
+## Chatbot Part 3
+added a Quiz System (True/False)
+• Fully interactive True/False cybersecurity quiz
+• Questions loaded dynamically from a JSON file (no hardcoded questions)
+• Score tracking and automatic result calculation
+• Immediate feedback based on selected answers
+• Final score and percentage displayed at completion
+• Modular design allowing easy addition of new questions
+
+Multi-Form Navigation System
+• Multi-screen Windows Forms architecture implemented:
+• Login Form
+• Main Menu Dashboard
+• Chatbot Interface
+• Quiz Module
+• Results Screen
+• Smooth navigation between forms using object passing
+• User session (username) passed across all modules
+
+Enhancements
+• Transition from hardcoded logic → dynamic data-driven system
+• Separation of UI, logic, and data
+• Improved scalability for future features
+• More realistic application architecture (similar to real-world systems)
+• Better maintainability and modular design
+
 Available Commands
 
 • help – Displays available commands.
@@ -79,8 +105,6 @@ Copy to Output Directory → Copy if newer
 4. Run the application:
 Press F5 or click "Start"
 
-If program is giving issues please clone the repository when i commited the "fixed the syntax error" for a more stable command line program 
- 
 - Learning Outcomes
 This project demonstrates:
 1. User input handling in C#
@@ -88,6 +112,13 @@ This project demonstrates:
 3. Use of classes and methods for clean reusable code structure
 4. Basic chatbot logic design
 5. Console UI enhancement techniques
+6. Windows Forms application development
+7. JSON data handling and persistence
+8. Event-driven programming
+9. Multi-form navigation systems
+10. Basic multimedia integration in C#
+11. Separation of concerns in application design
+12. Scalable software architecture principles
 
 - Author
 - Armando Moabi
