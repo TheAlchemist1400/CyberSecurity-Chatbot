@@ -1,0 +1,91 @@
+[
+  {
+    "Keyword": [ "help", "Help" ],
+    "Response": "Sure! You can ask me about the following topics:\n\npassword - Learn about password safety.\nphishing - Learn about phishing scams.\nmalware - Learn about malware.\nbrowsing - Learn safe browsing practices.\npurpose - Learn the purpose of this chatbot.\ngoal - Learn our mission.\ncyber hawks - Learn who we are."
+  },
+
+  {
+    "Keyword": [ "password", "passcode", "Password" ],
+    "Response": "Password safety is crucial in protecting your online accounts. A strong password should be unique, difficult to guess, and never shared. Type 'tip' if you'd like a password tip or 'more' to learn more."
+  },
+
+  {
+    "Keyword": [ "phishing", "phishing scams", "Phishing" ],
+    "Response": "Phishing is a cyberattack where criminals pretend to be trusted organisations to trick people into revealing personal information. Type 'tip' for advice or 'more' for more information."
+  },
+
+  {
+    "Keyword": [ "malware", "Malware" ],
+    "Response": "Malware is malicious software designed to damage devices, steal information or gain unauthorized access. Type 'tip' or 'more'."
+  },
+
+  {
+    "Keyword": [ "browsing", "Browsing" ],
+    "Response": "Safe browsing helps protect your personal information while using the internet. Type 'tip' or 'more'."
+  },
+
+  {
+    "Keyword": [ "purpose", "Purpose" ],
+    "Response": "The purpose of Cyber Hawks is to raise cybersecurity awareness by educating users about online threats and how to stay safe."
+  },
+
+  {
+    "Keyword": [ "goal", "Goal" ],
+    "Response": "Our goal is to educate South Africans about cybersecurity and help them protect themselves from cyber threats."
+  },
+
+  {
+    "Keyword": [ "cyber hawks", "Cyber Hawks" ],
+    "Response": "Cyber Hawks is a cybersecurity awareness team dedicated to educating people about cyber threats and safe online practices."
+  },
+
+  {
+    "Keyword": [ "more password", "More password" ],
+    "Response": "Passwords protect your digital identity. Strong passwords make it much harder for attackers to gain unauthorized access to your accounts. A password should contain uppercase letters, lowercase letters, numbers and special characters."
+  },
+
+  {
+    "Keyword": [ "more phishing", "More phishing" ],
+    "Response": "Phishing attacks often arrive through emails, SMS messages or fake websites that appear legitimate. Their goal is to steal passwords, banking information or personal details."
+  },
+
+  {
+    "Keyword": [ "more malware", "More malware" ],
+    "Response": "Malware includes viruses, worms, ransomware, spyware and trojans. It can steal data, encrypt files, monitor activity or damage your computer."
+  },
+
+  {
+    "Keyword": [ "more browsing", "More browsing" ],
+    "Response": "Safe browsing includes checking for HTTPS websites, avoiding suspicious downloads, keeping browsers updated and never entering sensitive information on unknown websites."
+  },
+
+  {
+    "Keyword": [ "hello", "Hello" ],
+    "Response": "Hello! Welcome to Cyber Hawks. Type 'help' to see what I can help you with."
+  },
+
+  {
+    "Keyword": [ "hi", "Hi" ],
+    "Response": "Hi there! I'm Cyber Hawks. Type 'help' to see the cybersecurity topics I can explain."
+  },
+
+  {
+    "Keyword": [ "how are you", "How are you" ],
+    "Response": "I'm doing great! Thanks for asking. I'm ready to help you learn about cybersecurity."
+  },
+
+  {
+    "Keyword": [ "thank you", "Thanks" ],
+    "Response": "You're welcome! Stay safe online."
+  },
+
+  {
+    "Keyword": [ "thanks", "Thank you" ],
+    "Response": "You're welcome! If you'd like to learn more, just ask."
+  },
+
+  {
+    "Keyword": [ "bye", "Bye" ],
+    "Response": "Goodbye! Remember to stay cyber safe."
+  }
+]
